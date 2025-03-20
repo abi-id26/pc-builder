@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import ProductCard from '@/components/ProductCard';
+import { Product } from '@/types/product';
 
-export default function Home({ products }: { products: any[] }) {
+export default function Home({ products }: { products: Product[] }) {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   const filteredProducts = selectedCategory 
