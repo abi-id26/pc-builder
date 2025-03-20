@@ -9,3 +9,4 @@ export default async function ProductsPage() {
   const products = await getProducts();
   return <Home products={products} />;
 }
+export const dynamic = 'force-dynamic';
